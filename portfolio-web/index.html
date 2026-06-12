@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYO.REACH Portfolio</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="scripts.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">RYO.REACH</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about-me" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+            <li><a href="#services" onclick="closeMenu()">Service</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="#contact" class="hire-btn" onclick="closeMenu()">Hire Me</a></li>
+        </ul>
+    </nav>
+
+    <section class="home-page" id="home">
+        <div class="home-container">
+            <div class="tille-container">
+                <h2 class="title"><span>RYO.REACH</span></h2>
+                <h2 class="sub-title">Photographer • Videographer • IT Engineering Student</h2>
+                <div class="home-btn">
+                    <div class="view-portfolio">
+                        <button><a href="#portfolio">View Portfolio</a></button>
+                    </div>
+                    <div class="download-cv">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <div class="about-me-tittle">
+            <h2 class="name">I'm <span>RYO.REACH</span></h2>
+            <p class="home-info">I'm a photographer and video creator capturing travel, landscape, portraits,
+                events and sport photography. I focus on real emotions, natural light,
+                and storytelling to turn every scene into memorable visuals.</p>
+            <div class="skill">
+                <h2>My Skill</h2>
+                <div class="skill-photo"><a href="#skill-photography">Photography</a></div>
+                <div class="skill-video"><a href="#skill-videography">Videography</a></div>
+                <div class="skill-editing"><a href="#skill-videography">Video Editing</a></div>
+            </div>
+            <p class="exp-3y">3 year+ experience in Media industry</p>
+        </div>
+
+        <div class="about-image">
+            <img src="./images/about-me.png" alt="About RYO.REACH">
+        </div>
+    </section>
+
+    <div id="portfolio"></div>
+    <div class="portfolio-container">
+        <div class="portfolio-title">
+            <h2>MY PORTFOLIO</h2>
+            <p>A collection of my photography, videography, and creative projects. Each project represents my passion
+                for storytelling, creativity, and continuous learning.</p>
+        </div>
+    </div>
+
+    <div class="skill-container">
+
+        <div class="skill-photography" id="skill-photography">
+            <h2 class="skill-title">PHOTOGRAPHY</h2>
+            <div class="skill-card">
+
+                <div class="card">
+                    <img src="./images/hun-many.jpg" alt="Event Photography">
+                    <h2>Event</h2>
+                </div>
+
+                <div class="card">
+                    <img src="./images/sport-cover.jpg" alt="Sport Photography">
+                    <h2>Sport</h2>
+                </div>
+
+                <div class="card">
+                    <img src="./images/portrait-cover.jpg" alt="Portrait Photography">
+                    <h2>Portrait</h2>
+                </div>
+
+                <div class="card">
+                    <img src="./images/landscape-cover.jpg" alt="Landscape Photography">
+                    <h2>Landscape</h2>
+                </div>
+
+            </div>
+            <p class="skill-subtitle">Photography is more than taking pictures—it is about capturing emotions,
+                stories, and memories that can be remembered for years to come.</p>
+        </div>
+
+
+        <div class="skill-videography" id="skill-videography">
+            <h2 class="skill-vdo-title">VIDEOGRAPHY • VIDEO EDITING</h2>
+
+            <div class="skill-card">
+
+                <div class="card-vdo">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1"
+                            title="Traveling Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h2>Traveling</h2>
+                </div>
+
+                <div class="card-vdo">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/Kkfy02jPOSs?rel=0&modestbranding=1"
+                            title="Travel Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h2>Event Video</h2>
+                </div>
+
+                <div class="card-vdo">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+                            title="Sankranta"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h2>Sankranta</h2>
+                </div>
+
+            </div>
+
+            <p class="skill-vdo-subtitle">Through videography and video editing, I transform moments into compelling
+                stories. From capturing footage to crafting the final edit, I focus on creating videos that are
+                engaging, meaningful, and visually impactful.</p>
+        </div>
+
+    </div>
+
+    <div class="software">
+        <h2 class="software-title">Software I Use</h2>
+        <p class="software-subtitle">The tools that help me transform ideas into creative visual content.</p>
+        <div class="software-grid">
+            <div class="software-card">
+                <h2>DaVinci Resolve</h2>
+                <p>Video Editing</p>
+            </div>
+            <div class="software-card">
+                <h2>Adobe Lightroom</h2>
+                <p>Photo Editing</p>
+            </div>
+            <div class="software-card">
+                <h2>Adobe Photoshop</h2>
+                <p>Design</p>
+            </div>
+            <div class="software-card">
+                <h2>CapCut</h2>
+                <p>Content Creation</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services" id="services">
+        <div class="services-header">
+            <h2>My Services</h2>
+            <p>Ey krr nh tver dae oy ta ban luy nh thort tang os.</p>
+        </div>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-camera"></i></div>
+                <h3>Photography</h3>
+                <p>Capturing moments with emotion, storytelling, and professional quality.</p>
+                <ul>
+                    <li>Event Photography</li>
+                    <li>Portrait Photography</li>
+                    <li>Travel Photography</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-video"></i></div>
+                <h3>Videography</h3>
+                <p>Creating cinematic and engaging videos that tell powerful stories.</p>
+                <ul>
+                    <li>Event Highlights</li>
+                    <li>Cinematic Travel Videos</li>
+                    <li>Social Media Content</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-film"></i></div>
+                <h3>Video Editing</h3>
+                <p>Turning raw footage into smooth, polished, and creative videos.</p>
+                <ul>
+                    <li>Color Grading</li>
+                    <li>Transitions &amp; Effects</li>
+                    <li>Reels / Short Videos</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-image"></i></div>
+                <h3>Photo Editing</h3>
+                <p>Enhancing photos to make them clean, professional, and eye-catching.</p>
+                <ul>
+                    <li>Color Correction</li>
+                    <li>Retouching</li>
+                    <li>Background Fixing</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="another-service">Another Service is Personal photographer. When you're my Girlfriend.</p>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's work together — feel free to reach out anytime.</p>
+        <div class="contact-links">
+            <a href="mailto:nareachnai94@email.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.instagram.com/imreachhh?igsh=MWdkM25scXI4bnpsZw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/1EXX6YvMoG/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.tiktok.com/@ryo.reach?_r=1&_t=ZS-977bWB8gvvE" target="_blank"><i class="fa-brands fa-tiktok"></i>TikTok</a>
+        </div>
+    </div>
+<!-- 
+    <div class="copyright">
+        <h2>@2026 RYO.REACH Photography - All Right Reserved</h2>
+    </div> -->
+
+    <script>
+      
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        function closeMenu() {
+            navLinks.classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>

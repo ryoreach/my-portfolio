@@ -1,0 +1,765 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 15px 25px;
+    border-bottom: 1px solid whitesmoke;
+    background-color: #323b4c;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Black Ops One", system-ui;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: "Share Tech", sans-serif;
+    text-decoration: none;
+    color: #e4e4e4;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.hire-btn {
+    font-family: "Black Ops One", system-ui;
+    background-color: #e4e4e4;
+    color: #323b4c !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: #ffffff;
+    color: #1f2533 !important;
+}
+
+/* Hamburger button — hidden on desktop */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #e4e4e4;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* ===========================
+   HOME
+=========================== */
+.home-page {
+    width: 100%;
+    min-height: 95vh;
+    background:
+        linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(213,255,253,0.3)),
+        url("../images/home-page-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 80px 60px;
+    gap: 60px;
+}
+
+.tille-container {
+    flex: 1 1 300px;
+}
+
+.title span {
+    font-family: "Black Ops One", system-ui;
+    font-size: clamp(52px, 8vw, 125px);
+    font-weight: 700;
+    color: #1f2533;
+    line-height: 1;
+    display: block;
+}
+
+.sub-title {
+    color: #1f2533;
+    font-family: "Share Tech", sans-serif;
+    font-size: clamp(14px, 2vw, 18px);
+    margin-top: 8px;
+}
+
+.home-btn {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.view-portfolio button,
+.download-cv button {
+    padding: 10px 20px;
+    font-family: "Share Tech", sans-serif;
+    background-color: #323b4c;
+    color: #e4e4e4;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.view-portfolio button:hover,
+.download-cv button:hover {
+    background-color: #1f2533;
+}
+
+.view-portfolio button a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+
+/* ===========================
+   ABOUT ME
+=========================== */
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 40px;
+    background-color: #323b4c;
+}
+
+.about-me-tittle {
+    flex: 1 1 320px;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: clamp(36px, 6vw, 65px);
+    font-family: "Black Ops One", system-ui;
+    color: #e4e4e4;
+}
+
+.name span {
+    color: #e4e4e4;
+}
+
+.home-info {
+    font-family: "Share Tech", sans-serif;
+    font-size: clamp(15px, 2vw, 22px);
+    color: #e4e4e4;
+    padding-top: 12px;
+    line-height: 1.6;
+}
+
+.skill {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill h2 {
+    font-size: 22px;
+    font-family: "Black Ops One", system-ui;
+    color: #e4e4e4;
+}
+
+.skill-photo,
+.skill-video,
+.skill-editing {
+    align-items: center;
+    text-align: center;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+.skill-photo a,
+.skill-video a,
+.skill-editing a {
+    display: block;
+    padding: 8px 16px;
+    color: #323b4c !important;
+    text-decoration: none;
+    font-family: "Share Tech", sans-serif;
+    font-size: 18px;
+}
+
+.exp-3y {
+    margin-top: 20px;
+    color: #e4e4e4;
+    font-family: cursive;
+}
+
+.about-image {
+    flex: 0 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+
+/* ===========================
+   PORTFOLIO TITLE
+=========================== */
+.portfolio-container {
+    width: 100%;
+    padding: 60px 20px 20px;
+}
+
+.portfolio-title {
+    text-align: center;
+}
+
+.portfolio-title h2 {
+    font-size: clamp(28px, 5vw, 45px);
+    font-family: "Black Ops One", system-ui;
+    color: #323b4c;
+}
+
+.portfolio-title p {
+    font-size: 15px;
+    font-family: cursive;
+    margin-top: 10px;
+    max-width: 680px;
+    margin-inline: auto;
+}
+
+
+/* ===========================
+   SKILL CONTAINER
+=========================== */
+.skill-container {
+    width: 100%;
+    padding: 20px 20px 60px;
+}
+
+/* Photography */
+.skill-photography {
+    margin-bottom: 60px;
+}
+
+.skill-title {
+    text-align: center;
+    font-size: clamp(24px, 4vw, 35px);
+    font-family: "Black Ops One", system-ui;
+    color: #323b4c;
+    margin-bottom: 10px;
+}
+
+.skill-card {
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.card {
+    flex: 0 1 280px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: #e4e4e4;
+    border-radius: 10px;
+    background-color: #323b4c;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.skill-subtitle {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 15px;
+    font-family: cursive;
+    max-width: 720px;
+    margin-inline: auto;
+    padding: 0 16px;
+}
+
+/* Videography */
+.skill-videography {
+    margin-top: 60px;
+}
+
+.skill-vdo-title {
+    text-align: center;
+    font-size: clamp(20px, 4vw, 35px);
+    font-family: "Black Ops One", system-ui;
+    color: #323b4c;
+    margin-bottom: 10px;
+}
+
+.card-vdo {
+    flex: 0 1 380px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: #e4e4e4;
+    border-radius: 10px;
+    background-color: #323b4c;
+    overflow: hidden;
+}
+
+/* ---- 16:9 responsive iframe wrapper ---- */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-vdo h2 {
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.skill-vdo-subtitle {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 15px;
+    font-family: cursive;
+    max-width: 720px;
+    margin-inline: auto;
+    padding: 0 16px;
+}
+
+
+/* ===========================
+   SOFTWARE
+=========================== */
+.software {
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #323b4c;
+    text-align: center;
+}
+
+.software-title {
+    font-size: clamp(28px, 5vw, 45px);
+    font-family: "Black Ops One", system-ui;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.software-subtitle {
+    font-size: 18px;
+    color: #dcdcdc;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-family: "Share Tech", sans-serif;
+    line-height: 1.6;
+}
+
+.software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.software-card {
+    flex: 0 1 200px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.software-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.software-card h2 {
+    font-family: "Share Tech", sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.software-card p {
+    font-family: cursive;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+
+/* ===========================
+   SERVICES
+=========================== */
+.services {
+    width: 100%;
+    padding: 80px 6%;
+    background:
+        linear-gradient(to bottom right, rgba(0,0,0,0.55), rgba(18,18,18,0.7)),
+        url("../images/service-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.services-header h2 {
+    font-family: "Black Ops One", system-ui;
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.services-header p {
+    font-family: cursive;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background: rgba(84, 84, 84, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #e4e4e4;
+}
+
+.service-card h3 {
+    font-family: "Share Tech", sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    padding-left: 18px;
+}
+
+.service-card ul li {
+    font-family: cursive;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 5px;
+}
+
+.another-service {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 60px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ===========================
+   CONTACT
+=========================== */
+.contact-section {
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #1f2533;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+.contact-section h2 {
+    font-family: "Black Ops One", system-ui;
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 12px;
+}
+
+.contact-section p {
+    font-family: "Share Tech", sans-serif;
+    font-size: 16px;
+    color: #b0b8c8;
+    margin-bottom: 32px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-family: "Share Tech", sans-serif;
+    font-size: 16px;
+    color: #e4e4e4;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-links a:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-4px);
+}
+
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-12px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.04); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===========================
+   RESPONSIVE BREAKPOINTS
+=========================== */
+
+/* ---- Tablets (≤ 900px) ---- */
+@media (max-width: 900px) {
+
+    .home-container {
+        padding: 120px 40px 60px;
+        gap: 40px;
+    }
+
+    .about-me {
+        gap: 40px;
+        padding: 80px 30px;
+    }
+
+    .services-container {
+        gap: 16px;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+}
+
+/* ---- Mobile (≤ 640px) ---- */
+@media (max-width: 640px) {
+
+    /* Navbar */
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #323b4c;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        padding: 16px 24px 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        gap: 14px;
+        z-index: 998;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Home */
+    .home-container {
+        padding: 90px 24px 50px;
+        gap: 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-btn {
+        justify-content: center;
+    }
+
+    /* About */
+    .about-me {
+        padding: 60px 24px;
+        text-align: center;
+    }
+
+    .skill {
+        justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 280px;
+    }
+
+    /* Portfolio cards */
+    .card {
+        flex: 0 1 100%;
+        max-width: 360px;
+    }
+
+    .card-vdo {
+        flex: 0 1 100%;
+        max-width: 380px;
+    }
+
+    /* Software grid */
+    .software-grid {
+        gap: 14px;
+    }
+
+    .software-card {
+        flex: 1 1 140px;
+    }
+
+    /* Services */
+    .services {
+        padding: 60px 5%;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Contact */
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ---- Very small phones (≤ 380px) ---- */
+@media (max-width: 380px) {
+    .title span {
+        font-size: 42px;
+    }
+
+    .name {
+        font-size: 32px;
+    }
+}
